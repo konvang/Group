@@ -1,0 +1,7 @@
+Invoice Number: 714d9ae9-cfdf-42b3-b3ea-3bb8c422ebfa
+Date of Transaction: 8/7/2018
+Account: Admin Admin
+Card Type: Account Funds Added To Account
+Transaction Amount: 13.50
+Game Title: Rocket League
+ 

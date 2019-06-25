@@ -1,0 +1,14 @@
+Invoice Number: 6761ed4a-339b-466e-ad54-9d6e39a16ac7
+Date of Transaction: 12/3/2018
+Account: Null Reference
+Card Type: VISA
+Transaction Amount: 8.99
+Game Title: Battle Brothers
+ 
+Invoice Number: 6761ed4a-339b-466e-ad54-9d6e39a16ac7
+Date of Transaction: 12/3/2018
+Account: Null Reference
+Card Type: VISA
+Transaction Amount: 8.99
+Game Title: Battle Brothers
+ 

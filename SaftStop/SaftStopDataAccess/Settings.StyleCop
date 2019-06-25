@@ -1,0 +1,11 @@
+<StyleCopSettings Version="105">
+  <GlobalSettings>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>saft</Value>
+      <Value>Saft</Value>
+      <Value>saftstop</Value>
+      <Value>saftStop</Value>
+      <Value>SaftStop</Value>
+    </CollectionProperty>
+  </GlobalSettings>
+</StyleCopSettings>

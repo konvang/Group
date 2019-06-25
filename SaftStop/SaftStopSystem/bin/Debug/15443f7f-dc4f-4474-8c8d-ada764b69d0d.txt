@@ -1,0 +1,14 @@
+Invoice Number: 15443f7f-dc4f-4474-8c8d-ada764b69d0d
+Date of Transaction: 8/8/2018
+Account: Admin Admin
+Card Type: VISA
+Transaction Amount: 30.00
+Game Title: Uurnong Uurnlimited
+ 
+Invoice Number: 15443f7f-dc4f-4474-8c8d-ada764b69d0d
+Date of Transaction: 8/8/2018
+Account: Admin Admin
+Card Type: VISA
+Transaction Amount: 30.00
+Game Title: Uurnong Uurnlimited
+ 

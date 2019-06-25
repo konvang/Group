@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="SaftStopSystem.FriendView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SaftStopSystem"
+             mc:Ignorable="d" 
+             Background="Black"
+             d:DesignHeight="250" d:DesignWidth="500">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="SharedResources.xaml"/>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/c1bg.png"/>
+        </Grid.Background>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="4" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="4" />
+            <RowDefinition Height="Auto" />
+            
+        </Grid.RowDefinitions>
+        
+        <Label Content="Search" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Foreground="#82d435"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Path=SearchText, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="182"/>
+        <local:MultiAccountView DataContext="{Binding Path=FilteredAccountViewModel}" Grid.Row="4" Grid.ColumnSpan="3" Width="Auto"></local:MultiAccountView>
+        <ContentControl Content="{Binding Path=Commands}" ContentTemplate="{StaticResource HorizontalCommandsTemplate}" Grid.Column="2" Margin="10,76,20,-127" Grid.Row="5"/>
+    </Grid>
+</UserControl>

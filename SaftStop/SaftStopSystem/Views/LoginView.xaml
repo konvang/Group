@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="SaftStopSystem.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SaftStopSystem"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="500">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="SharedResources.xaml"/>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/c1bg.png"/>
+        </Grid.Background>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="84" />
+            <ColumnDefinition Width="4" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="14" />
+            <RowDefinition Height="Auto" MinHeight="49" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="Auto" MinHeight="18" />
+            <RowDefinition Height="14" />
+        </Grid.RowDefinitions>
+
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="13,22,0,0" VerticalAlignment="Top" Foreground="#82d435" Height="26" Width="65"/>
+        <TextBox Grid.Column="2" Height="23" Margin="10,25,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="{Binding Path=Username, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="14,3,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="#82d435" Height="26" Width="64"/>
+        <PasswordBox Grid.Column="2" Height="23" Margin="10,5,20,0" Grid.Row="2" PasswordChar="#" local:PasswordBoxAssistant.BindPassword="true"  local:PasswordBoxAssistant.BoundPassword="{Binding Path=Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></PasswordBox>
+        <!-- <TextBox Grid.Column="2" Height="23" Margin="10,5,20,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Text="{Binding Path=Password, UpdateSourceTrigger=PropertyChanged}"/> -->
+        <ContentControl Content="{Binding Path=Commands}" ContentTemplate="{StaticResource HorizontalCommandsTemplate}" Margin="28,10,20,-42" Grid.Row="5" Grid.ColumnSpan="3"/>
+    </Grid>
+</UserControl>
